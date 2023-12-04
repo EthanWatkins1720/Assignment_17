@@ -101,7 +101,7 @@ const updateAlbum = async(req, res) => {
     }
 
     if (req.file) {
-        fieldsToUpdate.img = "images/" + req.file.filename;
+        fieldsToUpdate.cover = "images/" + req.file.filename;
     }
 
     const results = await Album.updateOne({_id:req.params.id}, fieldsToUpdate);
