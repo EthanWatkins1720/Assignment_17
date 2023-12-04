@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <script src="../scripts.js"></script>
+    </head>
+    <body>
+        <h1>A Smooth Smattering of My Favorite Albums</h1>
+        <div id="button-div">
+            <button id = "add-button">Add Album</button>
+        </div>
+        <div id="real-delete-button-div">
+            <h3>Are you sure you want to delete this album?</h3>
+            <a id="real-delete-button" href="#">I'm sure!</a>
+            <a id="cancel-button" href="#">I'm not so sure...</a>
+        </div>
+        <div id="add-album-box">
+            <h2 id="add-album-title">Add Album</h2>
+            <form id="add-album-form" method="post">
+                <input type="hidden" name="_id" value="-1" />
+                <p>
+                    <label for="name">Album name:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+                <p>
+                    <label for="band">Band name:</label>
+                    <input type="text" id="band" name="band" required>
+                </p>
+                <p>
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </p>
+                <p>
+                    <label for="year">Release year:</label>
+                    <input type="text" id="year" name="year" required>
+                </p>
+                <p id="band-members-form">
+                    <label>Band members:</label>
+                    <button id="band-members-button">Add band member</button>
+                    <div id="band-members-div"></div>
+                </p>
+                <p>
+                    <label for="cover">Upload album cover:</label>
+                    <input type="file" id="cover" name="cover">
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div id = "album-list">
+            <div class="album-column" id="album-list-left"></div>
+            <div class="album-column" id="album-list-center"></div>
+            <div class="album-column" id="album-list-right"></div>
+        </div>
+    </body>
+</html>

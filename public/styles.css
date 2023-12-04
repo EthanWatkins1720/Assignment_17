@@ -1,0 +1,94 @@
+body {
+	background: #32021F;
+	color: #77A0A9;	
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #C3D9DE;
+    text-align: center;
+}
+
+h2 {
+    color: #C3D9DE;
+}
+
+img {
+    size: 640px;
+    width: 50%;
+}
+
+.cover {
+	transition: transform 0.2s;
+}
+
+.cover:hover {
+	transform: scale(1.7);
+}
+
+#album-list {
+    display: flex;
+}
+
+.album-column {
+    width: 32.2%;
+    margin: 1%;
+}
+
+section {
+    text-align: center;
+	padding: 10px;
+	margin: 25px;
+	background: rgba(108, 89, 110, .7);
+	box-shadow: 10px 14px rgba(111, 125, 140, .7);
+    height: 700px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#album-list {
+    display: flex;
+}
+
+#add-album-box {
+    display: none;
+    text-align: center;
+	padding: 10px;
+	margin: 25px;
+	background: rgba(108, 89, 110, .7);
+	box-shadow: 10px 14px rgba(111, 125, 140, .7);
+}
+
+#button-div {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: larger;
+    color: pink;
+    margin: 5%;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.edit-button {
+}
+
+.delete-button {
+    font-family: sans-serif;
+}
+
+#real-delete-button-div {
+    text-align: center;
+    display: none;
+}
